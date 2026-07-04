@@ -61,6 +61,65 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
 
+        /* Recommended Channels Section */
+        .channels {
+            padding: 50px 20px 60px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .channels .section-subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            margin-top: -20px;
+        }
+
+        .channel-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .channel-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #f8f9fa;
+            padding: 20px 25px;
+            border-radius: 16px;
+            text-decoration: none;
+            color: inherit;
+            width: 280px;
+            text-align: left;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .channel-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .channel-card img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .channel-card h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+            color: #222;
+        }
+
+        .channel-card p {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
         /* Features Section */
         .features {
             padding: 80px 20px;
@@ -277,6 +336,35 @@
         <p class="description">좋아하는 K-POP과 드라마로 한국어를 배우세요.</p>
         <!-- 배포 시 실제 서비스 도메인으로 교체 (현재는 로컬 개발 서버 주소) -->
         <a href="http://localhost:5173" class="btn-primary">무료 시작하기</a>
+    </section>
+
+    <!-- Recommended Channels Section -->
+    <section class="channels">
+        <h2 class="section-title">함께 보면 좋은 한국어 유튜브 채널</h2>
+        <p class="section-subtitle">꾸준히 한국어를 가르치는 채널들이에요</p>
+        <div class="channel-grid">
+            <a class="channel-card" href="https://www.youtube.com/@talktomeinkorean" target="_blank" rel="noopener">
+                <img src="https://yt3.ggpht.com/fy4H111WGiWem0IytL-0_1fQTZBLCa6cPu9u8FaYHHOU0lovMPSfWQryd71akEOFHHkUFwml=s800-c-k-c0x00ffffff-no-rj" alt="Talk To Me In Korean">
+                <div>
+                    <h3>Talk To Me In Korean</h3>
+                    <p>구독자 211만명</p>
+                </div>
+            </a>
+            <a class="channel-card" href="https://www.youtube.com/@koreanunnie" target="_blank" rel="noopener">
+                <img src="https://yt3.ggpht.com/Ji58eF24T-6719KwtCw9-b_y_qF1VaBnCA8BaFMWgedf-H2ounoFMhL1oJ1G88iTnJq8p4wVh6E=s800-c-k-c0x00ffffff-no-rj" alt="Korean Unnie 한국언니">
+                <div>
+                    <h3>Korean Unnie 한국언니</h3>
+                    <p>구독자 126만명</p>
+                </div>
+            </a>
+            <a class="channel-card" href="https://www.youtube.com/@gobillykorean" target="_blank" rel="noopener">
+                <img src="https://yt3.ggpht.com/ytc/AIdro_m7b1YuwbuQAujdEhZyt7aRjh3dEHIRfDicBOKUX45yrgA=s800-c-k-c0x00ffffff-no-rj" alt="Learn Korean with GO! Billy Korean">
+                <div>
+                    <h3>GO! Billy Korean</h3>
+                    <p>구독자 81만명</p>
+                </div>
+            </a>
+        </div>
     </section>
 
     <!-- Features Section -->
